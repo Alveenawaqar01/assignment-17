@@ -17,7 +17,7 @@ function Form() {
 
   const onSubmit = async (data: FormData) => {
     try {
-      const response = await axios.post("http://localhost:3000/api/form", data); // Make a POST request
+      const response = await axios.post("/api/form", data); // Make a POST request
       const { errors = {} } = response.data; // Destructure the 'errors' property from the response data
 
       // Define a mapping between server-side field names and their corresponding client-side names
